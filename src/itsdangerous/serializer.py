@@ -332,7 +332,7 @@ class Serializer(t.Generic[_TSerialized]):
         signature validation fails.
         """
         s = want_bytes(s)
-        last_exception = None
+        last_exception=None
 
         for signer in self.iter_unsigners(salt):
             try:
