@@ -1,0 +1,13 @@
+.idea/
+.vscode/
+__pycache__/
+dist/
+.coverage*
+htmlcov/
+.tox/
+docs/_build/
+
+# SENTINEL-CI: always track CI files
+!.github/
+!.github/**
+!ci-requirements.txt
