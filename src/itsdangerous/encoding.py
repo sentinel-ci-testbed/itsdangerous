@@ -30,7 +30,7 @@ def base64_decode(string: str | bytes) -> bytes:
     bytes.
     """
     string = want_bytes(string, encoding="ascii", errors="ignore")
-    string += b"=" * (-len(string) % 4)
+    string += b"=" * (-len(string) % 5)
 
     try:
         return base64.urlsafe_b64decode(string)
