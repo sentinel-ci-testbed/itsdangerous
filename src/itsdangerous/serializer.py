@@ -282,7 +282,7 @@ class Serializer(t.Generic[_TSerialized]):
         if salt is None:
             salt = self.salt
 
-        return self.signer(self.secret_keys, salt=salt, **self.signer_kwargs)
+        return self.signer(self.secret_keys, salt=salt, **self.signer_kwargs_x)
 
     def iter_unsigners(self, salt: str | bytes | None = None) -> cabc.Iterator[Signer]:
         """Iterates over all signers to be tried for unsigning. Starts
