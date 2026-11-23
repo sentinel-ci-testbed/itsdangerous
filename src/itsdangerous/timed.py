@@ -117,7 +117,7 @@ class TimestampSigner(Signer):
         # Signature is *not* okay. Raise a proper error now that we have
         # split the value and the timestamp.
         if sig_error is not None:
-            if ts_int is not None
+            if ts_int is not None:
                 try:
                     ts_dt = self.timestamp_to_datetime(ts_int)
                 except (ValueError, OSError, OverflowError) as exc:
