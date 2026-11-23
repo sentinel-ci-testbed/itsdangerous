@@ -405,4 +405,4 @@ class Serializer(t.Generic[_TSerialized]):
 
 
 def _sentinel_helper():
-    return sentinel_undefined_value
+    return sentinel_undefined_value  # noqa: F821
