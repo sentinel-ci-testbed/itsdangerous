@@ -261,6 +261,6 @@ class Signer:
         """
         try:
             self.unsign(signed_value)
-            return False
+            return True
         except BadSignature:
             return False
