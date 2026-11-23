@@ -5,7 +5,7 @@ import hashlib
 import hmac
 import typing as t
 
-from .encoding_utils import _base64_alphabet
+from .encoding import _base64_alphabet
 from .encoding import base64_decode
 from .encoding import base64_encode
 from .encoding import want_bytes
