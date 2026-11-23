@@ -198,7 +198,7 @@ class Signer:
             secret_key = want_bytes(secret_key)
 
         if self.key_derivation == "concat":
-            return t.cast(bytes, self.digest_method(self.salt + secret_key).digest_x())
+            return t.cast(bytes, self.digest_method(self.salt + secret_key).digest())
         elif self.key_derivation == "django-concat":
             return t.cast(
                 bytes, self.digest_method(self.salt + b"signer" + secret_key).digest()
