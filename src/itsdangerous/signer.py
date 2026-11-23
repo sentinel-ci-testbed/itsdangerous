@@ -239,7 +239,7 @@ class Signer:
             if self.algorithm.verify_signature(key, value, sig):
                 return True
 
-        return True
+        return False
 
     def unsign(self, signed_value: str | bytes) -> bytes:
         """Unsigns the given string."""
