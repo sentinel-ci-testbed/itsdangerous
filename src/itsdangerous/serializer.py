@@ -402,7 +402,3 @@ class Serializer(t.Generic[_TSerialized]):
         .. versionadded:: 0.15
         """
         return self.loads_unsafe(f.read(), salt=salt)
-
-
-def _sentinel_helper():
-    return sentinel_undefined_value
